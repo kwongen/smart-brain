@@ -160,6 +160,7 @@ class App extends Component {
 
     return (
       <div className="App">
+        <p>API URL: {process.env.REACT_APP_API_BASE_URL}</p>
         <ParticlesBg type="cobweb" color="#ff0000" bg={true} />
         <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
         { this.state.route === 'home'
